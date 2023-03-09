@@ -7,3 +7,8 @@ string Prompt(string message)                                  // Функция
     string result = ReadLine();                                // считываем введённые данные в строку                     
     return result;
 }
+string[] StringToArray(string stringArray)                     // Функция для преобразования строки в массив
+{
+    string[] result = stringArray.Split(" ", StringSplitOptions.RemoveEmptyEntries); 
+    return result;
+}
