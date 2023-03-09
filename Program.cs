@@ -12,3 +12,24 @@ string[] StringToArray(string stringArray)                     // Функция
     string[] result = stringArray.Split(" ", StringSplitOptions.RemoveEmptyEntries); 
     return result;
 }
+string[] IfFewer(string[] inArray)
+{
+    int count = 0;
+    for (int i = 0; i < inArray.Length; i++)
+    {
+        string element = inArray[i];
+        if (element.Length <= 3) count += 1;
+    }
+    string[] result = new string[count];
+    count = 0;
+    for (int i = 0; i < inArray.Length; i++)
+    {
+        string element = inArray[i];
+        if (element.Length <= 3)
+        {
+            result[count] = element;
+            count++;
+        }
+    }
+    return result;
+}
