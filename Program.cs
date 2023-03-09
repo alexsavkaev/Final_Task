@@ -35,4 +35,5 @@ string[] IfFewer(string[] inArray)
 }
 string textline = Prompt("Введите слова через пробел: ");
 string[] text = StringToArray(textline);
+Write("Слова, в которых букв меньше или равно 3: ");
 WriteLine(string.Join(", ", IfFewer(text)));
