@@ -33,3 +33,6 @@ string[] IfFewer(string[] inArray)
     }
     return result;
 }
+string textline = Prompt("Введите слова через пробел: ");
+string[] text = StringToArray(textline);
+WriteLine(string.Join(", ", IfFewer(text)));
